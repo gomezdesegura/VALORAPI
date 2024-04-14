@@ -45,7 +45,9 @@ function createeventoHtml(eventos){
     const eventoDiv = document.getElementById("eventos");
     eventoDiv.innerHTML="";
 
-    const ListaEventos = document.createElement("ul");
+    let ListaEventos = document.createElement("ul");
+    
+    ListaEventos.appendChild(document.createElement("br"));
 
     for(const evento of eventos) {
 
