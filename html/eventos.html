@@ -15,6 +15,38 @@
 
     <script src="/Js/eventos.js"></script>
 
+    <style>
+        /* Estilos para la galería de imágenes */
+        #galeria {
+            width: 100%;
+            overflow-x: auto; /* Permite desplazamiento horizontal */
+            white-space: nowrap; /* Para que las imágenes estén en una línea */
+            scroll-behavior: smooth; /* Animación de desplazamiento suave */
+            scrollbar-width: thick;
+            scrollbar-color: WHITE;
+            /* background-color: white */;
+        }
+
+        #galeria::-webkit-scrollbar {
+    width: 22px; /* Grosor de la barra de desplazamiento en Chrome y Safari */
+}
+        .imagen {
+            display: inline-block;
+            width: 400px;
+            height: 280px;
+            margin-right: 0px; 
+            margin-left: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer; /* Cambia el cursor al pasar por encima */
+        }
+        .imagen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+        }
+    </style>
+
   </head>
   
 
@@ -48,16 +80,57 @@
     </header>
 <body>
 
+    
+
   <div class="row" style="background-color: black;">
         <pre aling="center" style="background-color: black;">
                                                 <img src="../images/valorant_titulo.jpg" alt="titulo"></pre>
      
+        <div id="galeria">
+        <div class="imagen" onclick="mostrar('arcane')">
+            <img src="../images/arcane_pass.jpg" alt="Imagen 1">
+        </div>
+        <div class="imagen" onclick="mostrar('champions')">
+            <img src="../images/champions_pass.jpg" alt="Imagen 2">
+        </div>
+        <div class="imagen" onclick="mostrar('crossover')">
+            <img src="../images/crossover.jpg" alt="Imagen 3">
+        </div>
+
+        <div class="imagen" onclick="mostrar('horizons')">
+            <img src="../images/horizons.jpeg" alt="Imagen 1">
+        </div>
+        <div class="imagen" onclick="mostrar('lunar')">
+            <img src="../images/lunar_celebration.png" alt="Imagen 2">
+        </div>
+        <div class="imagen" onclick="mostrar('recall')">
+            <img src="../images/recall_pass.jpeg" alt="Imagen 3">
+        </div>
+        <div class="imagen" onclick="mostrar('scales')">
+            <img src="../images/scales_pass.jpg" alt="Imagen 3">
+        </div>
+        <div class="imagen" onclick="mostrar('year')">
+            <img src="../images/year_pass.jpg" alt="Imagen 3">
+        </div>
+        
+    </div>
      
      <section id="eventos" style="background-image: url('../images/fondo.jpg') ;">
 
 
         
-      </section>     	 
+      </section>  
+      
+      <script>
+        function mostrar(filtro) {
+            document.getElementById('galeria').style.display = 'none';
+            muestraeventos(filtro);
+
+
+        }
+    </script>
+
+
                      	
 </body>
 

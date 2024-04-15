@@ -1,20 +1,24 @@
+
+var data = [];
 async function geteventos() {
     const url = new URL("https://valorant-api.com/v1/events");
     //url.searchParams.append("language", "es_ES");
     try {
         const response = await fetch(url.toString());
-        const data = await response.json();
-        console.log(data);
+        const res = await response.json();
+        data = res.data;
+        //console.log(data);
        // console.log(data.results);
         //createeventosLi(data.data);
-        createeventoHtml(data.data);
+       // createeventoHtml(data.data);
+       
     }
     catch (error) {
         console.error(error);
     }
 }
 
-async function getevento(url) {
+/* async function getevento(url) {
     try {
         const response = await fetch(url);
         const data = await response.json();
@@ -24,7 +28,7 @@ async function getevento(url) {
     catch (error) {
         console.error(error)
     }
-}
+} */
 
 /* function createeventosLi(eventos) {
     const eventosList = document.getElementById("eventos");
@@ -41,7 +45,10 @@ async function getevento(url) {
     });
 } */
 
-function createeventoHtml(eventos){
+function muestraeventos(filtro){
+    //const eventos = geteventos();
+    console.log(data);
+
     const eventoDiv = document.getElementById("eventos");
     eventoDiv.innerHTML="";
 
@@ -49,10 +56,11 @@ function createeventoHtml(eventos){
     
     ListaEventos.appendChild(document.createElement("br"));
 
-    for(const evento of eventos) {
-
-        
-        let title = document.createElement("h2");
+    for(const evento of data) {
+        //console.log(evento.shortDisplayName.toString());
+        if (evento.shortDisplayName.toString().toLowerCase().includes(filtro.toLowerCase()) || evento.displayName.toString().toLowerCase().includes(filtro.toLowerCase())) {
+            
+            let title = document.createElement("h2");
         title.innerText="Nombre del evento : " + evento.shortDisplayName.toString().toUpperCase();
         ListaEventos.appendChild(title);
 
@@ -75,11 +83,15 @@ function createeventoHtml(eventos){
         li.innerText = evento.endTime.replace("T"," , ");
         li.innerText = li.innerText.replace("Z","");
         ListaEventos.appendChild(li);
+
+
+        }         
+        
 /*         li.addEventListener("click",()=>{
             geteventos(eventos.assetPath)
         }) */
         
-        
+       
     };
 
     eventoDiv.appendChild(ListaEventos);
