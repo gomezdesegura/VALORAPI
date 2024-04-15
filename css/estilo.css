@@ -552,8 +552,10 @@ background-color: #CCC;}
   text-align: center; /* Centra los elementos */
 }
 
+
 #botones-categorias button {
   margin: 5px; /* Añade un margen entre los botones */
+
 }
 
 .parte-cuerpo {
