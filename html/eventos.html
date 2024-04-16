@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Información sobre el juego Valorant">
     <meta name="keywords" content="VALORAPI">
+
+    <link href='https://fonts.googleapis.com/css?family=Jersey 10' rel='stylesheet'>
+
     <title>EVENTOS VALORANT</title>
 
     <!-- Bootstrap -->
@@ -92,6 +95,7 @@
         <div class="imagen" onclick="mostrar('arcane')">
             <img src="../images/arcane_pass.jpg" alt="Imagen 1">
         </div>
+
         <div class="imagen" onclick="mostrar('champions')">
             <img src="../images/champions_pass.jpg" alt="Imagen 2">
         </div>
@@ -128,7 +132,7 @@
         
     </div>
      
-     <section id="eventos" style="background-image: url('../images/fondo.jpg') ;">
+     <section class="eventos" id="eventos" >
 
 
         
@@ -136,7 +140,7 @@
       
       <script>
         function mostrar(filtro) {
-            document.getElementById('galeria').style.display = 'none';
+            
             muestraeventos(filtro);
 
 
