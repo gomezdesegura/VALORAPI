@@ -1,0 +1,29 @@
+h2,h3,ul{
+    text-align: center;
+   color: white;
+    /* font-family: 'Jersey 10';font-size: 22px;font-family: 'Jersey 10';font-size: 22px; */
+}
+
+li{
+font-size:large;
+color: white;
+}
+
+.titulo{
+    font-family: 'Jersey 10';font-size: 22px;font-family: 'Jersey 10';font-size: 52px;
+    color: white;
+    }
+
+    .titulo2{
+        font-family: 'Jersey 10';font-size: 22px;font-family: 'Jersey 10';font-size: 42px;
+        color: white;
+        }
+
+        .eventos{
+
+            background-image: url('../images/fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            }
+
+
