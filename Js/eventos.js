@@ -100,6 +100,7 @@ function muestraeventos(filtro){
 
 ///BOTON
         let boton = document.createElement('button');
+    boton.style.class = "animated-button";
     boton.textContent = 'VOLVER';
     boton.id = 'volver';
     boton.style.backgroundColor = 'red';
