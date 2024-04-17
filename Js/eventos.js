@@ -47,6 +47,7 @@ function muestraeventos(filtro){
 
         document.getElementById('galeria').style.display = 'none';
         title.innerText="Evento encontrado!";
+        title.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
         ListaEventos.appendChild(title);
     }else{
 
@@ -77,6 +78,8 @@ function muestraeventos(filtro){
         let li = document.createElement("li");
         li.innerText = evento.startTime.replace("T"," Hora: ");
         li.innerText = li.innerText.replace("Z","");
+        li.style.fontSize = "30px";
+        li.style.fontStyle = "bold";
         
         ListaEventos.appendChild(li);
 
@@ -92,6 +95,8 @@ function muestraeventos(filtro){
         li = document.createElement("li");
         li.innerText = evento.endTime.replace("T"," Hora: ");
         li.innerText = li.innerText.replace("Z","");
+        li.style.fontSize = "30px";
+        li.style.fontStyle = "bold";
         ListaEventos.appendChild(li);
 
         ListaEventos.appendChild(document.createElement("br"));
