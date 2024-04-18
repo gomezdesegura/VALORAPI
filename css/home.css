@@ -1,6 +1,6 @@
 @font-face {
     font-family: valorant;
-    src: url(/VALORAPI/fonts/Valorant\ Font.ttf);
+    src: url(/fonts/Valorant\ Font.ttf);
   }
   
   .welcome h1{
@@ -60,5 +60,5 @@ a:hover{
 }
 
 body{
-    background-image: url(/VALORAPI/images/1356696.jpeg);
+    background-image: url(/images/1356696.jpeg);
 }

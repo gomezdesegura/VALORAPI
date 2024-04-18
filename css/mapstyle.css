@@ -1,6 +1,6 @@
 @font-face {
   font-family: valorant;
-  src: url(/VALORAPI/fonts/Valorant\ Font.ttf);
+  src: url(/fonts/Valorant\ Font.ttf);
 }
 .maps img {
   display: block;
@@ -64,7 +64,7 @@
 
 body{
   /*background-color: #292828;*/
-  background-image: url(/VALORAPI/images/1282618.jpg);
+  background-image: url(/images/1282618.jpg);
 }
 
 #splashImages {
