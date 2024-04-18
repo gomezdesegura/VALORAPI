@@ -544,38 +544,6 @@ background-color: #CCC;}
   display: inline-block;
   margin-left: 15px;
 }
-#armas-container {
-  display: none;
-  text-align: center;
-}
-#botones-categorias {
-  text-align: center; /* Centra los elementos */
-}
 
 
-#botones-categorias button {
-  margin: 5px; /* Añade un margen entre los botones */
 
-}
-
-.parte-cuerpo {
-  max-width: 30%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  background-color: #0F3;
-  border: 0.000001px solid #000; /* Añade un borde de 2px sólido de color negro */
-  border-radius: 1px; /* Añade esquinas redondeadas */
-
-}
-
-.parte-cuerpo img {
-  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
-  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
-  display: block; /* Para eliminar cualquier espacio adicional debajo de la imagen */
-}
-.vida {
-  display: flex;
-  justify-content: center;
-}

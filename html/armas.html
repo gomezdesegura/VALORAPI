@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Información sobre el juego Valorant">
     <meta name="keywords" content="VALORAPI">
-    <title>VALORAPI</title>
+    <title>VALORAPI - Campo de Tiro</title>
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <!-- CSS -->
-    <link href="/css/estilo.css" rel="stylesheet">
+    <link href="/css/armas.css" rel="stylesheet">
 </head>
 <body>
 <header id="header">
@@ -40,6 +40,15 @@
     </nav><!--/nav-->
 </header>
 <div style="background-color: crimson; height: 10px; padding: 0; margin:-20px;"> </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Bienvenido al Campo de Tiro de Valorant</h1>
+            <p>Aquí podrás explorar las diferentes categorías de armas del juego y, al elegir una, podrás dispararle a Sova para ver qué daño le causarías. ¿Estás listo para planificar tus rondas y convertirte en el próximo campeón de Valorant?</p>
+            <h3>Elige tu juguete favorito y revientalo</h3>
+        </div>
+    </div>
+</div>
 <div class="row">
     <br>
     <br>
@@ -52,11 +61,18 @@
     </section>
     <section class="mapas"></section>
     <section class="rangos"></section>
-    <img class="parte-cuerpo" src="/images/Sova_Herrera_Cabeza.png" alt="Cabeza" data-parte="cabeza">
-    <img class="parte-cuerpo" src="/images/Sova_Herrera_Cuerpo.png" alt="Cuerpo" data-parte="cuerpo">
-    <img class="parte-cuerpo" src="/images/Sova_Herrera_Piernas.png" alt="Piernas" data-parte="piernas">
-    <p class="vida">Puntos de vida restantes: <span id="vida">150</span></p>
-
+    <div class="col-md-6">
+        <div class="row parte-cuerpo-container">
+            <div class="col-md-8">
+                <img class="parte-cuerpo" src="/images/Sova_Herrera_Cabeza.png" alt="Cabeza" data-parte="cabeza">
+                <img class="parte-cuerpo" src="/images/Sova_Herrera_Cuerpo.png" alt="Cuerpo" data-parte="cuerpo">
+                <img class="parte-cuerpo" src="/images/Sova_Herrera_Piernas.png" alt="Piernas" data-parte="piernas">
+            </div>
+            <div class="col-md-4 vida-container">
+                <p class="vida"> <span id="vida"></span></p>
+            </div>
+        </div>
+    </div>
 </div>
 <footer id="footer">
     <div class="container">
