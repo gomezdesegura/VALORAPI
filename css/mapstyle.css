@@ -71,3 +71,17 @@ body{
   column-count: 2;
   height: auto;
 }
+
+@media screen and (max-width: 580px) {
+  #splashImages {
+    column-count: 1;
+  h3{
+    font-size: 30px;
+    text-align: center;
+  }
+  p{
+    width: 400px;
+  }
+  }
+  
+}
