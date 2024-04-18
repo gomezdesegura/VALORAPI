@@ -349,7 +349,7 @@ hr{ margin:0 0 30px 0 ; padding:0;}
   color: #fff;
 }
 
-.
+
 
 
 /*************************
@@ -358,7 +358,30 @@ hr{ margin:0 0 30px 0 ; padding:0;}
 
 
 
+.texto h5{ margin-left:25px; padding-left:0;  text-align:left;}
+.panel-heading i{
+  height: 100px;
+  width: 100px;  
+  border-radius: 100%;
+  line-height: 100px;
+  text-align:center;
+  background:#0F3;
+  color:#FFF;
+}
 
+.panel-heading i:hover {
+  background:#333;
+  color: #fff;
+}
+
+.texto{ text-align:center; max-height: 220px;
+}
+.texto a:hover {
+  background:#6fc72a;
+  border: none;
+  }
+  
+.panelillos{ margin-left:8px; padding-left: 0px;}
 
 
 
@@ -654,5 +677,3 @@ body {
   display: inline-block;
   margin-left: 15px;
 }
-
-
