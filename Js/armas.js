@@ -130,6 +130,7 @@ class GestorArmas {
             const estadoCheckbox = localStorage.getItem(arma.nombre);//Si el localStorage tiene capturado el nombre de un arma la marca
             if (estadoCheckbox === 'true') {
                 checkboxSeleccionar.checked = true;
+                this.seleccionarArma(arma)
             } else {
                 checkboxSeleccionar.checked = false;
             }
@@ -183,14 +184,14 @@ class GestorArmas {
         });
     }
 
-    seleccionarArma(arma) {//Aqui se define como deseleccionar el arma, en el paso anterior de agregar eventos es donde se hace la llamada
+    seleccionarArma(arma) {
         if (this.armaSeleccionada && this.armaSeleccionada !== arma) {
-            //sto busca un elemento que tenga la clase arma y además tenga un atributo data-nombre con el valor igual al nombre del arma seleccionada anteriormente, y dentro de este elemento busca un elemento con la clase checkbox-seleccionar
             const checkboxAnterior = document.querySelector(`.arma[data-nombre="${this.armaSeleccionada.nombre}"] .checkbox-seleccionar`);
-            checkboxAnterior.checked = false;
-            
+            if (checkboxAnterior) {
+                checkboxAnterior.checked = false;
+            }
         }
-        this.armaSeleccionada = arma/*  */;
+        this.armaSeleccionada = arma;
         console.log(`Arma seleccionada: ${arma.nombre}`);
     }
 
