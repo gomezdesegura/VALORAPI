@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Información sobre eljuego Valorant">
+    <meta name="description" content="Información sobre el juego Valorant">
     <meta name="keywords" content="VALORAPI">
-    <title>VALORAPI</title>
+    <title>VALORAPI - Campo de Tiro</title>
 
-    <!-- Bootstrap -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <!--CSS------->
     <link href="/css/estilo.css" rel="stylesheet">
-  </head>
-  
-
-  
-  <header id="header">
-       
-          <nav class="navbar navbar-inverse" role="banner">
+    <link rel="stylesheet" href="/css/armas.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
         	<div class="container">
                  <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -28,74 +25,72 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="/index.html"><img src="/images/logo_version2.png" alt="logo"></a>
-                </div>
+          </div>
 				
-                <div class="collapse navbar-collapse navbar-right">
+          <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="/index.html">Home</a>
-                        <li ><a href="/html/personajes.html">Personajes</a></li>
-                        <li class="active"><a href="/html/armas.html">Armas</a></li>
-                        <li><a href="/html/mapas.html">Mapas</a></li>
-                        <li><a href="/html/rangos.html">Rangos</a></li>                    
+                            <li><a href="/index.html">Home</a>
+                            <li ><a href="/html/personajes.html">Personajes</a></li>
+                            <li class="active" ><a href="/html/armas.html">Armas</a></li>
+                            <li ><a href="/html/mapas.html">Mapas</a></li>
+
+                            <li><a href="/html/eventos.html">Eventos</a></li>                                  
                     </ul>
-                </div>
-            </div><!--final de container-->     
-          </nav><!--/nav-->
-
-    </header>
-<body>
-  <div style="background-color: crimson; height: 10px; padding: 0; margin:-20px;"> </div>
-  <div class="row">
-      <br>         
-      <br>   
-      <br>   
-      <br>                      
-      <section class="personajes">
-
-
-
-
-      </section>
-      
-
-
-
-      <section class="armas">
- 
-
-
-
-  
-      </section> 
-      <section class="mapas">
-      
-
-
-        
-        
-      </section> 
-      <section class="rangos">
-      
-
-        
-      </section>     	 
-                     	
-</body>
-
-
-
-<!--inicio footer-->
- <footer id="footer" >
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2024 AITOR / ASIER / ANI / DORLETA
-                </div>
-                
+          </div>
+          
+        </nav><!--/nav-->	
+  </header>
+<div style="background-color: crimson; height: 10px; padding: 0; margin:-20px;"> </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Bienvenido al Campo de Tiro de Valorant</h1>
+            <p>Aquí podrás explorar las diferentes categorías de armas del juego y, al elegir una, podrás dispararle a Sova para ver qué daño le causarías. ¿Estás listo para planificar tus rondas y convertirte en el próximo campeón de Valorant?</p>
+            <h3>Elige tu juguete favorito y revientalo</h3>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="personajes"></section>
+    <section class="armas">
+        <div id="botones-categorias"></div>
+        <div id="armas-container"></div>
+    </section>
+    <section class="mapas"></section>
+    <section class="rangos"></section>
+    <div class="col-md-6">
+        <div class="row parte-cuerpo-container">
+            <div class="col-md-8">
+                <img class="parte-cuerpo" src="/images/Sova_Herrera_Cabeza.png" alt="Cabeza" data-parte="cabeza">
+                <img class="parte-cuerpo" src="/images/Sova_Herrera_Cuerpo.png" alt="Cuerpo" data-parte="cuerpo">
+                <img class="parte-cuerpo" src="/images/Sova_Herrera_Piernas.png" alt="Piernas" data-parte="piernas">
+            </div>
+            <div class="col-md-4 vida-container">
+                <p class="vida"> <span id="vida"></span></p>
             </div>
         </div>
-    </footer><!--footer-->
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                &copy; 2024 AITOR / ASIER / ANI / DORLETA
+            </div>
+        </div>
+    </div>
+</footer><!--footer-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/Js/armas.js" type="module"></script>
+<script src="/Js/llamadasApi.js" type="module"></script>
+<script src="/index.js" type="module"></script>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="../Js/jquery.js"></script>
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <script src="../Js/bootstrap.js"></script>
+</body>
 </html>
