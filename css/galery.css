@@ -2,7 +2,6 @@
 /* CSS Document */
 
 
-
 /*************************
 *******Typography******
 **************************/
@@ -131,8 +130,7 @@ input.search-form{
   color:rgb(255, 8, 0);
 }
 
-.linea {width: 100%; background-color:#FF4655
-  ; height:5px;}
+.linea {width: 100%; background-color:#0F3; height:5px;}
 
 
 
@@ -142,8 +140,7 @@ input.search-form{
 **************************/
 
 
-.boton  { background-color: #FF4655; 
-  ;}
+.boton  { background-color: #0F3;}
 .presupuesto { margin:0; padding:35px 0 15px  0; }
 .presupuesto p{ font-size:18px;  }
 
@@ -156,10 +153,8 @@ hr{ margin:0 0 30px 0 ; padding:0;}
 .imagen1200{ margin-bottom:10px;}
 
 .breadcrumb a{ text-decoration:none; color:#333; }
-.breadcrumb a:hover{ color:#FF4655; 
-  ; }
-.activo{ color:#FF4655; 
-  ;}
+.breadcrumb a:hover{ color:#6fc72a; }
+.activo{ color:#6fc72a;}
 
 
 
@@ -349,7 +344,15 @@ hr{ margin:0 0 30px 0 ; padding:0;}
   color: #fff;
 }
 
-.
+.recent-work-wrap:hover .overlay {
+  opacity: 1;
+}
+/*+++++++******************
+****contacto+********
+************************/
+.contacto{margin-bottom:20px; padding-bottom: 20px; border-radius:10px;
+background-color: #CCC;}
+
 
 
 /*************************
@@ -357,8 +360,31 @@ hr{ margin:0 0 30px 0 ; padding:0;}
 **************************/
 
 
+.lista_servicios{ text-align:left;  height: 150px;}
+.texto h5{ margin-left:25px; padding-left:0;  text-align:left;}
+.panel-heading i{
+  height: 100px;
+  width: 100px;  
+  border-radius: 100%;
+  line-height: 100px;
+  text-align:center;
+  background:#0F3;
+  color:#FFF;
+}
 
+.panel-heading i:hover {
+  background:#333;
+  color: #fff;
+}
 
+.texto{ text-align:center; max-height: 220px;
+}
+.texto a:hover {
+  background:#6fc72a;
+  border:none;
+  }
+  
+.panelillos{ margin-left:8px; padding-left: 0px;}
 
 
 
@@ -406,7 +432,7 @@ hr{ margin:0 0 30px 0 ; padding:0;}
 .nav-tabs>li.active>a:focus {
   border: 0;
   color:#fff;
-  background: #FF4655; 
+  background: #0F3; 
   position: relative;
 }
 
@@ -416,7 +442,7 @@ hr{ margin:0 0 30px 0 ; padding:0;}
   width: auto;
   height: auto;
   border-style:solid;
-  border-color: transparent transparent transparent  #FF4655;
+  border-color: transparent transparent transparent  #0F3;
   border-width: 25px 22px;
   right: -44px;
   top:0;
@@ -452,37 +478,6 @@ hr{ margin:0 0 30px 0 ; padding:0;}
 }
 .estudios li{ padding-bottom: 3px;}
 .experiencia li{ padding-bottom: 3px;}
-
-
-.navbar-brand {
-  padding: 0; padding-left:10px; padding-bottom:30px;
-  margin:0;
-}
-
-.navbar {
- 
-  margin-bottom: 0;
-  background: #151515;
-  padding: 15px 0;
-}
- .navbar-nav{
-	 margin-top: 12px; 
-}
- 
-.navbar-inverse .navbar-nav > li > a {
-  color:#999;
-  padding: 5px 12px;
-  margin: 0;
-  line-height: 24px;
-  display: inline-block;
-}
-.navbar-inverse .navbar-nav > li > a:hover {
-  color:#FF4655; 
-  ;
-}
-
-.linea { background-color:#FF4655; 
-  ; height:5px;}
 
 
 
@@ -579,8 +574,14 @@ body {
   position: relative;
 
 }
+/*.AgentsPresent {
+    display: flex;
+    justify-content: center;
+    border-radius: 25px; /* Esquinas redondeadas */
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 
-
+    
+}
 .gallery p {width: 300px;
   padding: 20px;
   margin-right: 30px;

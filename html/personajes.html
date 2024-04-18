@@ -9,16 +9,36 @@
     <title>VALORAPI</title>
 
     <!-- Bootstrap -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <!--CSS------->
-    <link href="/css/estilo.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href ="../css/estilo.css" rel="stylesheet">
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/galery.css" rel="stylesheet">
+
   </head>
   
 
+  <body>
   
   <header id="header">
-       
-          <nav class="navbar navbar-inverse" role="banner">
+       <div class="iconos">
+       <div class="container">
+                   <div class="row">
+                    
+                    <div class="col-sm-6 col-xs-7">
+                      	
+                           		 <div class="search">
+                               		 <form role="form">
+                                   		 <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                   		 <i class="fa fa-search"></i>
+                               		 </form>
+                           		</div>
+                       	
+                    </div><!--/final de row-->
+           </div><!--/final de container-->
+           </div><!--/final de iconos-->
+
+        <nav class="navbar navbar-inverse" role="banner">
         	<div class="container">
                  <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -32,70 +52,62 @@
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                            <li><a href="/index.html">Home</a>
-                            <li class="active"><a href="/html/personajes.html">Personajes</a></li>
-                            <li ><a href="/html/armas.html">Armas</a></li>
-                            <li ><a href="/html/mapas.html">Mapas</a></li>
-                            <li><a href="/html/rangos.html">Rangos</a></li>                                  
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="active"><a href="personajes.html">Personajes</a></li>
+                        <li><a href="armas.html">Armas</a></li>
+                       <li><a href="mapas.html">Mapas</a></li>   
+                       <li><a href="rangos.html">Rangos</a></li>                      
                     </ul>
                 </div>
-            </div><!--final de container-->     
-          </nav><!--/nav-->
-
+                </div><!--final de container--> 
+        </nav><!--/nav-->
+	</div>	
     </header>
+<!--fin navegador-->
+
+
 <body>
-  <div style="background-color: crimson; height: 10px; padding: 0; margin:-20px;"> </div>
-  <div class="row">
-      <br>         
-      <br>   
-      <br>   
-      <br>                      
-      <section class="personajes">
 
-
-
-
-      </section>
-      
-
-
-
-      <section class="armas">
- 
-
-
+  <section class="gallery" id="galery">
+    
+  
+    <div id="galery-container"></div>
+   <div id="agents-buttons-container"></div>
+   <script src="/Js/agentes.js" type="module"></script>
+  <!--<script src="/Js/agentes2.js"> </script>-->
+  
 
   
-      </section> 
-      <section class="mapas">
-      
-
-
-        
-        
-      </section> 
-      <section class="rangos">
-      
-
-        
-      </section>     	 
-                     	
-</body>
-
-
-
-<!--inicio footer-->
- <footer id="footer" >
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2024 AITOR / ASIER / ANI / DORLETA
-                </div>
-                
-            </div>
+  </section>
+ 
+  
+  </body>
+  
+  
+  
+  <!--inicio footer-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          &copy; 2024 AITOR / ASIER / ANI / DORLETA
         </div>
-    </footer><!--footer-->
-    
+  
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../Js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
+    <script src="../Js/bootstrap.js"></script>
+  </body>
 </html>
