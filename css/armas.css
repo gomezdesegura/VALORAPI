@@ -649,6 +649,33 @@ h3 {
   color: black;
 }
 
+
+
+@media screen and (max-width: 580px) {
+  .vida-container{
+    margin: 30px;
+    align-content: center;
+  }
+  .parte-cuerpo img{
+    width:250%; /* La imagen ocupará todo el ancho del contenedor */
+    float: left;
+    background-color: #0F3;
+    align-content: center;
+  
+
+  }
+  .parte-cuerpo{
+    width: 150%;
+    margin-left: 80px;
+    padding-left: 60px;
+    align-content: center;
+    
+  
+  
+  }
+
+}
+
 @font-face {
   font-family: valorant;
   src: url(/fonts/Valorant_Font.ttf);
