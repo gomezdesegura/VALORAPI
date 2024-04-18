@@ -9,10 +9,10 @@
     <title>VALORAPI</title>
 
     <!-- Bootstrap -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/VALORAPI/css/bootstrap.css" rel="stylesheet">
     <!--CSS------->
-    <link href="/css/estilo.css" rel="stylesheet">
-    <link href=""
+    <link href="/VALORAPI/css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="/VALORAPI/css/mapstyle.css">
   </head>
   
 
@@ -28,16 +28,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/index.html"><img src="/images/logo_version2.png" alt="logo"></a>
+                    <a class="navbar-brand" href="/index.html"><img src="/VALORAPI/images/logo_version2.png" alt="logo"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                            <li><a href="/index.html">Home</a>
-                            <li ><a href="/html/personajes.html">Personajes</a></li>
-                            <li ><a href="/html/armas.html">Armas</a></li>
-                            <li class="active"><a href="/html/mapas.html">Mapas</a></li>
-                            <li><a href="/html/rangos.html">Rangos</a></li>                 
+                            <li><a href="/VALORAPI/index.html">Home</a>
+                            <li ><a href="/VALORAPI/html/personajes.html">Personajes</a></li>
+                            <li ><a href="/VALORAPI/html/armas.html">Armas</a></li>
+                            <li class="active"><a href="/VALORAPI/html/mapas.html">Mapas</a></li>
+                            <li><a href="/VALORAPI/html/rangos.html">Rangos</a></li>                 
                     </ul>
                 </div>
             </div><!--final de container-->     
@@ -46,40 +46,17 @@
     </header>
 <body>
   <div style="background-color: crimson; height: 10px; padding: 0; margin:-20px;"> </div>
-  <div class="row">
-      <br>         
-      <br>   
-      <br>   
-      <br>                      
-      <section class="personajes">
-
-
-
-
-      </section>
+  <div class="row">   
       
-
-
-
-      <section class="armas">
- 
-
-
-
-  
-      </section> 
-      <section class="mapas">
       
-
-
-        
-        
-      </section> 
-      <section class="rangos">
-      
-
-        
-      </section>     	 
+    <div class="maps">
+        <h1>Valorant Maps</h1>
+    <div id="splashImages"></div>
+    <div id="mapTypes"></div>
+    <div id="mapSplash"></div>
+    <script src="/VALORAPI/Js/mapas.js"></script>
+     
+    </div>
                      	
 </body>
 
@@ -98,5 +75,6 @@
     </footer><!--footer-->
     
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
+    <script src="/VALORAPI/Js/index.js"></script>
+    <script src="/VALORAPI/Js/mapas.js"></script>
 </html>

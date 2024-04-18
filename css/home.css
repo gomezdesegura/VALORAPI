@@ -1,0 +1,64 @@
+@font-face {
+    font-family: valorant;
+    src: url(/VALORAPI/fonts/Valorant\ Font.ttf);
+  }
+  
+  .welcome h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: valorant;
+    color: #fa4454;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    color: #fa4454;
+    font-family: valorant;
+}
+
+section {
+    box-shadow: 0px 2px 4px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personajes:hover{
+    box-shadow: 0px 2px 4px 5px rgba(250, 68, 84, 1);
+}
+
+.armas:hover{
+    box-shadow: 0px 2px 4px 5px rgba(250, 68, 84, 1);
+}
+
+.mapas:hover{
+    box-shadow: 0px 2px 4px 5px rgba(250, 68, 84, 1);
+}
+
+.eventos:hover{
+    box-shadow: 0px 2px 4px 5px rgba(250, 68, 84, 1);
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+body{
+    background-image: url(/VALORAPI/images/1356696.jpeg);
+}
