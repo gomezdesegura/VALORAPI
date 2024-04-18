@@ -126,22 +126,33 @@ class GestorArmas {
             const checkboxSeleccionar = document.createElement('input');
             checkboxSeleccionar.type = 'checkbox';
             checkboxSeleccionar.classList.add('checkbox-seleccionar');
-            checkboxSeleccionar.dataset.nombre = arma.nombre; // Agregar un atributo de dataset con el nombre del arma
+            checkboxSeleccionar.dataset.nombre = arma.nombre; 
+            const estadoCheckbox = localStorage.getItem(arma.nombre);//Si el localStorage tiene capturado el nombre de un arma la marca
+            if (estadoCheckbox === 'true') {
+                checkboxSeleccionar.checked = true;
+            } else {
+                checkboxSeleccionar.checked = false;
+            }
             //Una vez definidas todas las checkboxes de las armas, le metemos el evento para que cuando ese seleccionada y le vuelvas a dar se deseleccione.
             //Tambien cuando hay una seleccionada y seleccionas otra diferente, la primera se deselecciona y se selecciona la segunda.
+            
             checkboxSeleccionar.addEventListener('change', () => {
+
                 const checkboxes = document.querySelectorAll('.checkbox-seleccionar'); // Obtener todas las checkboxes
                 //Se recorre todas las checkbox para comprobar si la seleccionada es diferente a la actual y si hay alguna marcada, la desmarca
                 checkboxes.forEach(checkbox => {
                     if (checkbox !== checkboxSeleccionar && checkbox.checked) {
-                        checkbox.checked = false;
+                        localStorage.clear();// Se vacia el localstorage cada vez que haces click en una checkbox
+                        checkbox.checked = false;                        
                         //Se busca el arma seleccionada y se deselecciona
                         const armaSeleccionada = armas.find(arma => arma.nombre === checkbox.dataset.nombre);
                         if (armaSeleccionada) {
                             this.deseleccionarArma(armaSeleccionada);
+                            
                         }
                     }
                 });
+                localStorage.setItem(checkboxSeleccionar.dataset.nombre, checkboxSeleccionar.checked);//Se guarda la checkbox en localStorage
                 //Si aun no hay ningun arma marcada y haces click en la checkbox, llama a seleccionar arma
                 if (checkboxSeleccionar.checked) {
                     this.seleccionarArma(arma);
@@ -149,6 +160,7 @@ class GestorArmas {
                 } else {
                     this.deseleccionarArma(arma);
                 }
+                
             });
             //Se agregan las checkbox como elemento para cada arma
             armaElemento.appendChild(checkboxSeleccionar);    
@@ -176,6 +188,7 @@ class GestorArmas {
             //sto busca un elemento que tenga la clase arma y además tenga un atributo data-nombre con el valor igual al nombre del arma seleccionada anteriormente, y dentro de este elemento busca un elemento con la clase checkbox-seleccionar
             const checkboxAnterior = document.querySelector(`.arma[data-nombre="${this.armaSeleccionada.nombre}"] .checkbox-seleccionar`);
             checkboxAnterior.checked = false;
+            
         }
         this.armaSeleccionada = arma/*  */;
         console.log(`Arma seleccionada: ${arma.nombre}`);
